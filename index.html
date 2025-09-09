@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaveTip - Real-time Crypto Tipping for Twitch</title>
+    <meta name="description" content="WaveTip is a browser extension for Twitch that makes real-time stablecoin tipping a native part of the streaming experience using USDC.">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call_made" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+                    <div class="nav-logo">
+            <img src="images/logo_wavetip.png" alt="WaveTip" class="logo-nav">
+        </div>
+            <div class="nav-cta">
+                <a href="https://tally.so/r/wQaGEl" target="_blank" class="cta-button">Join Waitlist</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Real-time <span class="highlight">Crypto Tipping</span> for Twitch
+                </h1>
+                <p class="hero-subtitle">
+                    WaveTip makes USDC tipping a native part of the streaming experience. 
+                    Support your favorite creators with instant, low-fee payments directly from chat.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1%</span>
+                        <span class="stat-label">Transaction Fee</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">37%</span>
+                        <span class="stat-label">Less than Twitch</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">7.5M</span>
+                        <span class="stat-label">Active Streamers</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://tally.so/r/wQaGEl" target="_blank" class="primary-button large">
+                        Join Waitlist <span class="material-symbols-outlined">call_made</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+    <div class="container">
+            <h2 class="section-title">Watch Our Demo</h2>
+            <div class="video-container-large">
+                <video id="promo-video" src="video.mp4" class="promo-video" poster="images/poster2.jpg" playsinline>
+                Your browser does not support the video tag.
+            </video>
+            <div class="play-button" id="play-button">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5V19L19 12L8 5Z" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <h2 class="section-title">Roadmap</h2>
+            <div class="roadmap-content">
+                <div class="roadmap-timeline">
+                    <div class="roadmap-item">
+                        <div class="roadmap-marker completed"></div>
+                        <div class="roadmap-content-item">
+                                                         <h3>Q2 2025 - Foundation & Hackathons</h3>
+                            <p>Core development and participation in major hackathons:</p>
+                                <ul>
+                                <li>1st place at Apex by Ripple in Singapore</li>
+                                <li>2nd place on Ripple Track at ETHDenver</li>
+                                </ul>
+                        </div>
+                    </div>
+                    
+                                         <div class="roadmap-item">
+                         <div class="roadmap-marker current"></div>
+                         <div class="roadmap-content-item">
+                             <h3>Q3 2025 – MVP & Beta Launch</h3>
+                             <p>MVP release on XRPL, followed by beta launch with waitlist system</p>
+                         </div>
+                     </div>
+                     
+                     <div class="roadmap-item">
+                         <div class="roadmap-marker upcoming"></div>
+                         <div class="roadmap-content-item">
+                             <h3>Q4 2025 – Stellar Migration</h3>
+                             <p>Full migration to Stellar for efficiency</p>
+                         </div>
+                     </div>
+                     
+                     <div class="roadmap-item">
+                         <div class="roadmap-marker future"></div>
+                         <div class="roadmap-content-item">
+                             <h3>Q1 2026 – Scalability & Expansion</h3>
+                             <p>Optimized platform ready for mass adoption & market growth</p>
+                         </div>
+                     </div>
+                     
+                     <div class="roadmap-item">
+                         <div class="roadmap-marker future"></div>
+                         <div class="roadmap-content-item">
+                             <h3>Q2 2026 – Global Scale</h3>
+                             <p>International rollout and premium features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- They Talking About Us Section -->
+    <section id="highlights" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">They're Talking About Us</h2>
+            <div class="tweets-row">
+                <a href="https://x.com/easya_app/status/1933063715508924907" target="_blank" class="tweet-card">
+                    <div class="tweet-header">
+                        <div class="tweet-avatar">
+                            <img src="images/easya_app.jpg" alt="EasyA">
+                        </div>
+                        <div class="tweet-author">
+                            <span class="author-name">EasyA 🤳📱</span>
+                            <span class="author-handle">@easya_app</span>
+                        </div>
+                        <div class="tweet-platform">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <p class="tweet-text">WaveTip makes tipping your favourite online creators faster and fairer with $RLUSD 🎮</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-stats">
+                            <span class="tweet-date">9:27 AM · Jun 12, 2025 · 36.5K Views</span>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://x.com/krkmu_/status/1933769235173683225" target="_blank" class="tweet-card">
+                    <div class="tweet-header">
+                        <div class="tweet-avatar">
+                            <img src="images/krkmu_.jpg" alt="Max">
+                        </div>
+                        <div class="tweet-author">
+                            <span class="author-name">Max</span>
+                            <span class="author-handle">@krkmu_</span>
+                        </div>
+                        <div class="tweet-platform">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <p class="tweet-text">🥇 Meet @wavetip_fi, the 1st place winner of the EasyA x Ripple APEX Hackathon. A browser extension to tip your favorite Twitch streamers in $RLUSD — with just 1% fees. No middlemen.</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-stats">
+                            <span class="tweet-date">8:11 AM · Jun 14, 2025 · 25.5K Views</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://x.com/digitalassetbuy/status/1933466270609117522" target="_blank" class="tweet-card">
+                    <div class="tweet-header">
+                        <div class="tweet-avatar">
+                            <img src="images/digitalassetbuy.jpg" alt="Digital Asset Investor">
+                        </div>
+                        <div class="tweet-author">
+                            <span class="author-name">Digital Asset Investor</span>
+                            <span class="author-handle">@digitalassetbuy</span>
+                        </div>
+                        <div class="tweet-platform">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <p class="tweet-text">Who remembers the XRP Tipbot? Always wondered why such a good idea was never done again. I bet it's coming.</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-stats">
+                            <span class="tweet-date">12:07 PM · Jun 13, 2025 · 23.7K Views</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://x.com/dom_kwok/status/1937155767918100630" target="_blank" class="tweet-card">
+                    <div class="tweet-header">
+                        <div class="tweet-avatar">
+                            <img src="images/dom_kwok.jpg" alt="Dom | EasyA">
+                        </div>
+                        <div class="tweet-author">
+                            <span class="author-name">Dom | EasyA</span>
+                            <span class="author-handle">@dom_kwok</span>
+                        </div>
+                        <div class="tweet-platform">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        <p class="tweet-text">the winners of our @easya_app x @ripple hackathon are revolutionising trillion dollar industries, all on the #XRP Ledger. this is exactly what crypto needs right now.</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-stats">
+                            <span class="tweet-date">4:28 PM · Jun 23, 2025 · 11.2K Views</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-grid">
+                <a href="https://www.linkedin.com/in/eden-baud1/" target="_blank" class="team-member">
+                    <div class="member-avatar">
+                        <img src="images/eden.jpeg" alt="Eden" class="member-photo">
+                    </div>
+                    <h3>Eden Baudin</h3>
+                    <span class="member-role">CEO & Product Strategist</span>
+                    <p>Developer Relations at iExec, bridging product vision and execution in Web3. Expert in team coordination, delivery pipelines, and user-centric design.</p>
+                </a>
+                <a href="https://www.linkedin.com/in/kyllian-genot/" target="_blank" class="team-member">
+                    <div class="member-avatar">
+                        <img src="images/kyllian.jpeg" alt="Kyllian" class="member-photo">
+                    </div>
+                    <h3>Kyllian Genot</h3>
+                    <span class="member-role">CTO & Blockchain Developer</span>
+                    <p>Full-Stack Developer at Lobster Protocol, specializing in Fintech and UX Design. Technical leader with expertise in Solidity, Rust, and TypeScript.</p>
+                </a>
+                <a href="https://www.linkedin.com/in/favsidv/" target="_blank" class="team-member">
+                    <div class="member-avatar">
+                        <img src="images/fawzi.jpeg" alt="Fawzi" class="member-photo">
+                    </div>
+                    <h3>Fawzi Elghazoui</h3>
+                    <span class="member-role">COO & Frontend Developer</span>
+                    <p>Vice President at Kryptosphere DeVinci, combining operational expertise with frontend mastery. Proven leader in Web2 development and blockchain innovation.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Revolutionize Twitch Tipping?</h2>
+            <p>Join hundreds of creators who are already on the waitlist for the future of content monetization.</p>
+            <a href="https://tally.so/r/wQaGEl" target="_blank" class="primary-button large">
+                Join the Waitlist <span class="material-symbols-outlined">call_made</span>
+            </a>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="WaveTip" class="logo-footer">
+                        <span>wavetip</span>
+                    </div>
+                    <p>Making crypto tipping the default payment method for real-time creator monetization. Built on Stellar for instant, secure payments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigate</h4>
+                    <a href="#video">Demo</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#highlights">Highlights</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Ecosystem</h4>
+                    <a href="https://stellar.org" target="_blank">Stellar</a>
+                    <a href="https://circle.com" target="_blank">Circle</a>
+                    <a href="https://web3auth.io" target="_blank">Web3Auth</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="https://www.linkedin.com/company/wavetip/" target="_blank">LinkedIn</a>
+                    <a href="https://x.com/wavetip_fi" target="_blank">Twitter X</a>
+                    <a href="https://tally.so/r/wQaGEl" target="_blank">Waitlist</a>
+                </div>
+
+
+            </div>
+
+    </div>
+    </footer>
+
+    <script>
+        const video = document.getElementById('promo-video');
+        const playButton = document.getElementById('play-button');
+
+        function playVideo() {
+            video.play();
+            playButton.style.display = 'none';
+            video.setAttribute('controls', 'controls');
+        }
+
+        // Gérer le clic sur le bouton play
+        playButton.addEventListener('click', playVideo);
+
+        // Réafficher le bouton play si la vidéo se met en pause
+        video.addEventListener('pause', function() {
+            if (!video.ended) {
+                playButton.style.display = 'flex';
+            }
+        });
+
+        // Masquer le bouton play quand la vidéo se lance
+        video.addEventListener('play', function() {
+            playButton.style.display = 'none';
+        });
+
+        // Réafficher le bouton play quand la vidéo se termine
+        video.addEventListener('ended', function() {
+            playButton.style.display = 'flex';
+            video.removeAttribute('controls');
+        });
+
+        // Smooth scrolling pour les liens de navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScrollY = window.scrollY;
+        
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // Masquer le header quand on scroll vers le bas, l'afficher quand on remonte
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                navbar.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Roadmap progress line animation - système refait complètement
+        function updateRoadmapProgress() {
+            const roadmapSection = document.querySelector('.roadmap');
+            
+            if (roadmapSection) {
+                const rect = roadmapSection.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const sectionHeight = roadmapSection.offsetHeight;
+                
+                // Calculer la progression basée sur la position de la section dans l'écran
+                let progress = 0;
+                
+                // Commencer quand la section est à 65% de l'écran
+                if (rect.top < windowHeight * 0.65) {
+                    // Calculer la progression uniforme sur toute la section
+                    const sectionStart = windowHeight * 0.65;
+                    const totalDistance = sectionHeight + (windowHeight * 1.35); // Distance totale à parcourir
+                    const currentDistance = Math.max(0, (windowHeight * 0.65) - rect.top);
+                    
+                    if (rect.bottom < 0) {
+                        // Section complètement passée
+                        progress = 100;
+                    } else {
+                        // Progression uniforme sur toute la timeline avec accélération
+                        const acceleration = 3.3;
+                        progress = Math.max(0, Math.min(100, (currentDistance / totalDistance) * 100 * acceleration));
+                    }
+                }
+                
+                // Appliquer la progression uniforme
+                const timeline = document.querySelector('.roadmap-timeline');
+                if (timeline) {
+                    const progressHeight = (progress / 100) * timeline.scrollHeight;
+                    timeline.style.setProperty('--progress-height', progressHeight + 'px');
+                }
+            }
+        }
+
+        // Throttling function pour améliorer les performances
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Observer les changements de scroll pour la roadmap avec throttling minimal
+        window.addEventListener('scroll', throttle(updateRoadmapProgress, 8)); // ~120fps
+        window.addEventListener('resize', throttle(updateRoadmapProgress, 50));
+        
+        // Initialiser au chargement
+        document.addEventListener('DOMContentLoaded', updateRoadmapProgress);
+    </script>
+</body>
+</html>
