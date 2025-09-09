@@ -62,15 +62,17 @@
     <div class="container">
             <h2 class="section-title">Watch Our Demo</h2>
             <div class="video-container-large">
-                <video id="promo-video" src="video.mp4" class="promo-video" poster="images/poster2.jpg" playsinline>
-                Your browser does not support the video tag.
-            </video>
-            <div class="play-button" id="play-button">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 5V19L19 12L8 5Z" fill="white"/>
-                </svg>
+                <div class="responsive-iframe">
+                    <iframe
+                        class="promo-video"
+                        src="https://www.youtube-nocookie.com/embed/8XV68W9g5yQ?rel=0&modestbranding=1&playsinline=1"
+                        title="WaveTip Demo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -320,36 +322,6 @@
     </footer>
 
     <script>
-        const video = document.getElementById('promo-video');
-        const playButton = document.getElementById('play-button');
-
-        function playVideo() {
-            video.play();
-            playButton.style.display = 'none';
-            video.setAttribute('controls', 'controls');
-        }
-
-        // Gérer le clic sur le bouton play
-        playButton.addEventListener('click', playVideo);
-
-        // Réafficher le bouton play si la vidéo se met en pause
-        video.addEventListener('pause', function() {
-            if (!video.ended) {
-                playButton.style.display = 'flex';
-            }
-        });
-
-        // Masquer le bouton play quand la vidéo se lance
-        video.addEventListener('play', function() {
-            playButton.style.display = 'none';
-        });
-
-        // Réafficher le bouton play quand la vidéo se termine
-        video.addEventListener('ended', function() {
-            playButton.style.display = 'flex';
-            video.removeAttribute('controls');
-        });
-
         // Smooth scrolling pour les liens de navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
